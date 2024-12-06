@@ -1,0 +1,37 @@
+{
+  "name": "@k4/jsx-runtime",
+  "version": "1.0.0",
+  "description": "jsx-runtime",
+  "main": "./es/index.js",
+  "scripts": {
+    "build": "gulp",
+    "clean": "gulp --gulpfile ./gulpclean.js && rm -rf node_modules"
+  },
+  "keywords": [
+    "jsx-runtime"
+  ],
+  "files": [
+    "lib",
+    "es",
+    "package.json"
+  ],
+  "exports": {
+    ".": "./es/index.js",
+    "./jsx-dev-runtime": "./es/dev.js",
+    "./jsx-runtime": "./es/prod.js",
+    "./react": "./es/react.js",
+    "./react/jsx-runtime": "./es/prod.js",
+    "./react/jsx-dev-runtime": "./es/dev.js"
+  },
+  "dependencies": {
+    "tslib": "^2.4.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "author": "zhouxiaolei",
+  "license": "ISC"
+}

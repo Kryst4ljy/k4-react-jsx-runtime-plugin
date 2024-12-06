@@ -1,0 +1,22 @@
+{
+  "name": "@k4/react-webpack-plugin",
+  "version": "1.0.0",
+  "description": "rewrite react jsx-runtime plugin",
+  "main": "./src/index.js",
+  "scripts": {
+    "clean": "gulp --gulpfile ./gulpclean.js && rm -rf node_modules"
+  },
+  "keywords": [
+    "webpack",
+    "wepback-plugin"
+  ],
+  "author": "zhouxiaolei",
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/core": "^1.9.3",
+    "lodash": "^4.17.21"
+  },
+  "peerDependencies": {
+    "react": "^16 || ^17 || ^18"
+  }
+}
