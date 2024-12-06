@@ -1,6 +1,6 @@
 {
-  "name": "@k4/jsx-runtime",
-  "version": "1.0.0",
+  "name": "@woodude/jsx-runtime",
+  "version": "1.0.2",
   "description": "jsx-runtime",
   "main": "./es/index.js",
   "scripts": {
@@ -33,5 +33,9 @@
     "node": ">=8.0.0"
   },
   "author": "zhouxiaolei",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

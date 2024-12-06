@@ -1,5 +1,5 @@
 {
-  "name": "@k4/react-webpack-plugin",
+  "name": "@woodude/react-webpack-plugin",
   "version": "1.0.0",
   "description": "rewrite react jsx-runtime plugin",
   "main": "./src/index.js",
@@ -18,5 +18,9 @@
   },
   "peerDependencies": {
     "react": "^16 || ^17 || ^18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
