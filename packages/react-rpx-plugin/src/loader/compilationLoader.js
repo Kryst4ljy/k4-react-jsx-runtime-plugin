@@ -13,7 +13,7 @@ module.exports = async function compilationLoader(source, map) {
       development: mode === 'development',
       refresh: false,
       runtime: 'automatic',
-      importSource: '@k4/jsx-runtime/react', // The exact import source is '@k4/jsx-runtime/react/jsx-runtime'
+      importSource: '@woodude/jsx-runtime/react', // The exact import source is '@k4/jsx-runtime/react/jsx-runtime'
     };
 
     const commonOptions = {

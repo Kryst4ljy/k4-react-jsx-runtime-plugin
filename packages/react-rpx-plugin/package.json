@@ -1,8 +1,12 @@
 {
   "name": "@woodude/react-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "rewrite react jsx-runtime plugin",
-  "main": "./src/index.js",
+  "main": "index.js",
+  "files": [
+    "src",
+    "package.json"
+  ],
   "scripts": {
     "clean": "gulp --gulpfile ./gulpclean.js && rm -rf node_modules"
   },
@@ -12,12 +16,14 @@
   ],
   "author": "zhouxiaolei",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@swc/core": "^1.9.3",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "@woodude/jsx-runtime": "^1.0.2"
   },
   "peerDependencies": {
-    "react": "^16 || ^17 || ^18"
+    "react": "^16 || ^17 || ^18",
+    "webpack": "^5.0.0"
   },
   "publishConfig": {
     "access": "public",
