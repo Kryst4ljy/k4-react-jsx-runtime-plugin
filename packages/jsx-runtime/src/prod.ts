@@ -1,6 +1,6 @@
 // @ts-ignore
 import { jsx as _jsx, jsxs as _jsxs, Fragment } from 'react/jsx-runtime';
-import { hijackElementProps } from './style.js';
+import { hijackElementProps } from './hijack.js';
 
 /**
  * https://github.com/reactjs/rfcs/pull/107

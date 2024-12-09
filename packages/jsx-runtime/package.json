@@ -1,6 +1,6 @@
 {
   "name": "@woodude/jsx-runtime",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "jsx-runtime",
   "main": "./es/index.js",
   "scripts": {

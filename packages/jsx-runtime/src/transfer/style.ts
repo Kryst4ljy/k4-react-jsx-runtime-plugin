@@ -1,3 +1,7 @@
+import { isObject } from '../utils';
+
+export const STYLE = 'style';
+
 const RPX_REG = /"[^"]+"|'[^']+'|url\([^\)]+\)|(\d*\.?\d+)rpx/g;
 const __viewport_width__ = 750;
 const unitPrecision = 4;
@@ -59,4 +63,21 @@ function calcRpx(str) {
   return str.replace(RPX_REG, decimalVWTransformer);
 }
 
-export { convertUnit };
+const tansferStyle = function (props: any) {
+  const { style } = props;
+
+  if (isObject(style)) {
+    const result = Object.assign({}, props);
+    const convertedStyle = {};
+    for (const prop in style) {
+      // @ts-ignore
+      convertedStyle[prop] = typeof style[prop] === 'string' ? convertUnit(style[prop]) : style[prop];
+    }
+    result['style'] = convertedStyle;
+    return result;
+  }
+
+  return props;
+};
+
+export default tansferStyle;

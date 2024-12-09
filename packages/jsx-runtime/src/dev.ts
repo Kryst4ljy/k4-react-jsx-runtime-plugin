@@ -1,6 +1,6 @@
 // @ts-ignore
 import { jsxDEV as _jsxDEV, Fragment } from 'react/jsx-dev-runtime';
-import { hijackElementProps } from './style.js';
+import { hijackElementProps } from './hijack.js';
 
 /**
  * @param {*} type
