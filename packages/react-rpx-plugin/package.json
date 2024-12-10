@@ -1,6 +1,6 @@
 {
   "name": "@woodude/react-webpack-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "rewrite react jsx-runtime plugin",
   "main": "index.js",
   "files": [
